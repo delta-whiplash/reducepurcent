@@ -36,4 +36,5 @@ int main()
     cout << "Copyright, DeltaWhiplash" << endl;
     cout << "Bonjour, Bienvenue sur le programme qui calcul vos réduction" << endl;
     givemenewprice();
+    return 0;
 }
