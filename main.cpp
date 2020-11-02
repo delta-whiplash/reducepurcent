@@ -5,15 +5,14 @@ using namespace std;
 int givemenewprice()
 {
     float baseprice;
-    float reductionrate;
+    int reductionrate;
     float price2pay;
     char newvar;
     cout << "Quel est le prix de base ? ";
     cin >> baseprice;
     cout << "Quel est le taux de reduction ? ";
     cin >> reductionrate;
-    price2pay = baseprice*(reductionrate/100);
-    price2pay = baseprice-price2pay;
+    price2pay = baseprice-((baseprice*reductionrate)/100);
     cout << "Vous devrez payer : " << price2pay << "Euros" << endl;
     cout << "Voulez Vous calculer une autre réduction ? (O/n) ";
     cin >> newvar;
